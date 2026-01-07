@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative h-screen min-h-[800px] flex items-end pb-16 pt-20">
+    <section className="relative h-[75vh] min-h-[600px] max-h-[750px] flex items-end pb-16 pt-20">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-top bg-no-repeat"
