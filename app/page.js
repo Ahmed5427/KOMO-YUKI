@@ -1,3 +1,4 @@
+import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import WhatIsKomoYuki from '@/components/WhatIsKomoYuki'
 import StoreFormat from '@/components/StoreFormat'
@@ -9,15 +10,26 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Hero />
-      <WhatIsKomoYuki />
-      <StoreFormat />
-      <WhyWorks />
-      <TargetLocations />
-      <SupplierSection />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <Header />
+      <main className="min-h-screen">
+        <Hero />
+        <div id="about">
+          <WhatIsKomoYuki />
+        </div>
+        <div id="format">
+          <StoreFormat />
+        </div>
+        <div id="benefits">
+          <WhyWorks />
+        </div>
+        <div id="locations">
+          <TargetLocations />
+        </div>
+        <SupplierSection />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   )
 }

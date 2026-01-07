@@ -1,23 +1,44 @@
 export default function Hero() {
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center justify-center">
+    <section className="relative h-[85vh] min-h-[650px] max-h-[800px] flex items-end pb-16 pt-20">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-top bg-no-repeat"
         style={{ backgroundImage: 'url(/images/hero-storefront.jpg)' }}
       >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-blush-pink/30 to-peach/20"></div>
+        {/* Overlay - lighter to show the storefront better */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6 py-8 bg-white/90 rounded-lg backdrop-blur-sm">
-        <h1 className="font-outfit text-5xl md:text-6xl lg:text-7xl font-bold text-charcoal mb-6">
-          A Modern Asian Gifts & Toys Store
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-600">
-          Japanese-inspired retail designed for high-footfall town centres
-        </p>
+      <div className="relative z-10 w-full container mx-auto px-6 max-w-6xl">
+        <div className="max-w-3xl">
+          <div className="inline-block px-4 py-2 bg-blush-pink/90 backdrop-blur-sm rounded-full mb-6">
+            <p className="text-sm font-semibold text-charcoal uppercase tracking-wide">
+              Professional B2B Retail Concept
+            </p>
+          </div>
+          <h1 className="font-outfit text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            A Modern Asian Gifts & Toys Store
+          </h1>
+          <p className="text-xl md:text-2xl text-white/95 mb-8 leading-relaxed">
+            Japanese-inspired retail designed for high-footfall town centres
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="#contact"
+              className="px-8 py-4 bg-white text-charcoal rounded-lg hover:bg-gray-100 transition-all font-semibold text-lg shadow-lg hover:shadow-xl"
+            >
+              Property Enquiries
+            </a>
+            <a
+              href="#about"
+              className="px-8 py-4 bg-charcoal/80 backdrop-blur-sm text-white rounded-lg hover:bg-charcoal transition-all font-semibold text-lg border-2 border-white/20"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   )
