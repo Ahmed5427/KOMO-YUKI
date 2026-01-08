@@ -13,7 +13,7 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-cream">
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
-          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-6">
+          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
             Contact
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-12">

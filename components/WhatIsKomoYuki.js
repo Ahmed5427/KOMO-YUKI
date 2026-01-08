@@ -6,7 +6,7 @@ export default function WhatIsKomoYuki() {
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Main Section */}
         <ScrollAnimation>
-          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-4">
+          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-4">
             What is KOMO-YUKI
           </h2>
         </ScrollAnimation>
@@ -28,7 +28,7 @@ export default function WhatIsKomoYuki() {
         {/* Platform for Asian Indie Brands */}
         <ScrollAnimation delay={200}>
           <div className="max-w-4xl mx-auto mb-16">
-            <h3 className="font-outfit text-3xl font-bold text-charcoal mb-6 text-center">
+            <h3 className="font-outfit text-3xl font-bold text-charcoal mb-6">
               A Platform for Asian Indie Brands
             </h3>
             <div className="space-y-4">
@@ -48,7 +48,7 @@ export default function WhatIsKomoYuki() {
         {/* Two Concepts One Brand */}
         <ScrollAnimation delay={300}>
           <div className="max-w-4xl mx-auto mb-16">
-            <h3 className="font-outfit text-3xl font-bold text-charcoal mb-6 text-center">
+            <h3 className="font-outfit text-3xl font-bold text-charcoal mb-6">
               Two Concepts. One Brand.
             </h3>
             <div className="space-y-4 mb-8">
@@ -96,7 +96,7 @@ export default function WhatIsKomoYuki() {
         {/* Designed for Modern Retail */}
         <ScrollAnimation delay={400}>
           <div className="max-w-4xl mx-auto mb-12">
-            <h3 className="font-outfit text-3xl font-bold text-charcoal mb-6 text-center">
+            <h3 className="font-outfit text-3xl font-bold text-charcoal mb-6">
               Designed for Modern Retail
             </h3>
             <div className="space-y-4">
@@ -115,11 +115,11 @@ export default function WhatIsKomoYuki() {
 
         {/* Final Statement */}
         <ScrollAnimation delay={500}>
-          <div className="text-center">
+          <div className="max-w-3xl mx-auto">
             <h3 className="font-outfit text-3xl font-bold text-charcoal mb-4">
               One Brand. Multiple Experiences.
             </h3>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-700">
               Whether experienced as a retail store or a Tea & Sando House, KOMO-YUKI is unified by the same principles.
             </p>
             <p className="text-xl font-semibold text-charcoal mt-4">

@@ -34,7 +34,7 @@ export default function WhyWorks() {
     <section className="py-20 bg-gradient-to-br from-peach to-blush-pink">
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
-          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-6">
+          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
             Why KOMO-YUKI Works for Landlords
           </h2>
           <p className="text-xl text-charcoal max-w-4xl mx-auto mb-4 font-medium">
@@ -65,7 +65,7 @@ export default function WhyWorks() {
         </div>
 
         <ScrollAnimation delay={600}>
-          <div className="mt-12 text-center">
+          <div className="mt-12">
             <p className="text-sm text-charcoal font-medium max-w-4xl mx-auto italic bg-white/50 backdrop-blur-sm p-4 rounded-lg">
               Store format and concept mix are selected based on location, scale, and surrounding use, ensuring alignment with landlord and placemaking objectives.
             </p>

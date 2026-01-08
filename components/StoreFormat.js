@@ -6,7 +6,7 @@ export default function StoreFormat() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
-          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-6">
+          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
             Store Format
           </h2>
         </ScrollAnimation>
@@ -119,10 +119,10 @@ export default function StoreFormat() {
         {/* Designed for Flexible Rollout */}
         <ScrollAnimation delay={400}>
           <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="font-outfit text-2xl font-bold text-charcoal text-center mb-6">
+            <h3 className="font-outfit text-2xl font-bold text-charcoal mb-6">
               Designed for Flexible Rollout
             </h3>
-            <p className="text-center text-gray-700 mb-6">
+            <p className="text-gray-700 mb-6">
               Both formats are designed to be:
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
@@ -143,7 +143,7 @@ export default function StoreFormat() {
                 <p className="font-semibold text-charcoal">Scalable by market and footfall</p>
               </div>
             </div>
-            <p className="text-center text-gray-600 mt-6 italic">
+            <p className="text-gray-600 mt-6 italic">
               Store size and format are selected based on location, opportunity, and the surrounding environment.
             </p>
           </div>

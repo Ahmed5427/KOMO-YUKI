@@ -24,7 +24,7 @@ export default function TargetLocations() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
-          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-6">
+          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
             Target Locations
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-4">
@@ -40,8 +40,8 @@ export default function TargetLocations() {
             const Icon = location.icon
             return (
               <ScrollAnimation key={index} delay={index * 100} className="h-full">
-                <div className="p-10 bg-cream rounded-lg text-center hover:shadow-lg transition-shadow duration-300 h-full flex flex-col items-center justify-start">
-                  <Icon className="w-14 h-14 mx-auto mb-6 text-charcoal" />
+                <div className="p-10 bg-cream rounded-lg hover:shadow-lg transition-shadow duration-300 h-full flex flex-col items-start justify-start">
+                  <Icon className="w-14 h-14 mb-6 text-charcoal" />
                   <h3 className="font-outfit text-xl font-semibold text-charcoal mb-3">
                     {location.title}
                   </h3>
@@ -55,7 +55,7 @@ export default function TargetLocations() {
         </div>
 
         <ScrollAnimation delay={300}>
-          <div className="text-center mb-12">
+          <div className="mb-12">
             <p className="text-sm text-gray-600 max-w-3xl mx-auto italic">
               Unit size and layout will determine suitability for either the KOMO-YUKI Store or the KOMO-YUKI Tea & Sando House format.
             </p>
@@ -63,7 +63,7 @@ export default function TargetLocations() {
         </ScrollAnimation>
 
         <ScrollAnimation delay={400}>
-          <div className="text-center">
+          <div>
             <a
               href="#contact"
               className="inline-block px-12 py-4 bg-charcoal text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 text-lg"

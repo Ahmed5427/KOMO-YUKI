@@ -13,7 +13,7 @@ export default function SupplierSection() {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 max-w-5xl">
         <ScrollAnimation>
-          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-6">
+          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
             Interested in Partnering?
           </h2>
         </ScrollAnimation>
@@ -31,7 +31,7 @@ export default function SupplierSection() {
 
         <ScrollAnimation delay={200}>
           <div className="bg-white p-8 rounded-lg shadow-md mb-8 max-w-3xl mx-auto">
-            <h3 className="font-outfit text-xl font-semibold text-charcoal mb-6 text-center">
+            <h3 className="font-outfit text-xl font-semibold text-charcoal mb-6">
               Our approach prioritises:
             </h3>
             <div className="grid md:grid-cols-2 gap-4">
@@ -46,7 +46,7 @@ export default function SupplierSection() {
         </ScrollAnimation>
 
         <ScrollAnimation delay={300}>
-          <div className="text-center">
+          <div>
             <a
               href="#contact"
               className="inline-block px-12 py-4 bg-blush-pink text-charcoal font-semibold rounded-lg hover:bg-pink-400 transition-colors duration-300 text-lg"
