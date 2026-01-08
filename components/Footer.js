@@ -1,3 +1,5 @@
+import { Instagram, Twitter, MessageCircle, Image } from 'lucide-react'
+
 export default function Footer() {
   return (
     <footer className="bg-charcoal text-white py-16">
@@ -46,21 +48,37 @@ export default function Footer() {
               duncan@komoyuki.com
             </a>
 
-            <h4 className="font-outfit text-base font-semibold mb-3 uppercase tracking-wide">
+            <h4 className="font-outfit text-base font-semibold mb-4 uppercase tracking-wide">
               Follow KOMO-YUKI
             </h4>
-            <div className="space-y-2">
-              <a href="#" className="text-white/70 hover:text-white transition-colors text-sm block">
-                Instagram
+            <div className="flex gap-4">
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blush-pink hover:scale-110 transition-all duration-300 group"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5 text-white group-hover:rotate-12 transition-transform duration-300" />
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors text-sm block">
-                TikTok
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blush-pink hover:scale-110 transition-all duration-300 group"
+                aria-label="TikTok"
+              >
+                <MessageCircle className="w-5 h-5 text-white group-hover:rotate-12 transition-transform duration-300" />
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors text-sm block">
-                X (Twitter)
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blush-pink hover:scale-110 transition-all duration-300 group"
+                aria-label="X (Twitter)"
+              >
+                <Twitter className="w-5 h-5 text-white group-hover:rotate-12 transition-transform duration-300" />
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors text-sm block">
-                Pinterest
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blush-pink hover:scale-110 transition-all duration-300 group"
+                aria-label="Pinterest"
+              >
+                <Image className="w-5 h-5 text-white group-hover:rotate-12 transition-transform duration-300" />
               </a>
             </div>
           </div>
