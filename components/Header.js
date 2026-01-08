@@ -26,7 +26,7 @@ export default function Header() {
             <a href="#locations" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
               Locations
             </a>
-            <a href="#contact" className="px-6 py-2.5 bg-charcoal text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold tracking-wide">
+            <a href="#contact" className="px-6 py-2.5 rounded-lg font-semibold tracking-wide transition-colors" style={{ backgroundColor: '#F6BCC8', color: '#2B2B2B' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#F4B6C2'} onMouseLeave={(e) => e.target.style.backgroundColor = '#F6BCC8'}>
               Contact Us
             </a>
           </nav>

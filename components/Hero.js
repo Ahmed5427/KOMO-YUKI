@@ -33,18 +33,15 @@ export default function Hero() {
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-6 md:mb-8 leading-relaxed">
             Japanese-inspired retail designed for high-footfall town centres
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
+          <div>
             <a
               href="#contact"
-              className="px-6 py-3 md:px-8 md:py-4 bg-white text-charcoal rounded-lg hover:bg-gray-100 transition-all font-semibold text-base md:text-lg shadow-lg hover:shadow-xl text-center"
+              className="inline-block px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold text-base md:text-lg shadow-lg hover:shadow-xl text-center transition-all"
+              style={{ backgroundColor: '#F6BCC8', color: '#2B2B2B' }}
+              onMouseEnter={(e) => e.target.style.backgroundColor = '#F4B6C2'}
+              onMouseLeave={(e) => e.target.style.backgroundColor = '#F6BCC8'}
             >
               Property Enquiries
-            </a>
-            <a
-              href="#about"
-              className="px-6 py-3 md:px-8 md:py-4 bg-charcoal/90 backdrop-blur-sm text-white rounded-lg hover:bg-charcoal transition-all font-semibold text-base md:text-lg border-2 border-white/30 text-center"
-            >
-              Learn More
             </a>
           </div>
         </div>
