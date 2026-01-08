@@ -1,4 +1,4 @@
-import { Instagram, Twitter, MessageCircle, Image } from 'lucide-react'
+import { Instagram, Twitter, Facebook, Music, Image } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -51,7 +51,7 @@ export default function Footer() {
             <h4 className="font-outfit text-base font-semibold mb-4 uppercase tracking-wide">
               Follow KOMO-YUKI
             </h4>
-            <div className="flex gap-4">
+            <div className="flex gap-3 flex-wrap">
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blush-pink hover:scale-110 transition-all duration-300 group"
@@ -62,9 +62,16 @@ export default function Footer() {
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blush-pink hover:scale-110 transition-all duration-300 group"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5 text-white group-hover:rotate-12 transition-transform duration-300" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blush-pink hover:scale-110 transition-all duration-300 group"
                 aria-label="TikTok"
               >
-                <MessageCircle className="w-5 h-5 text-white group-hover:rotate-12 transition-transform duration-300" />
+                <Music className="w-5 h-5 text-white group-hover:rotate-12 transition-transform duration-300" />
               </a>
               <a
                 href="#"
