@@ -5,9 +5,11 @@ export default function Footer() {
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-3 gap-8 mb-8 pb-8 border-b border-white/20">
           <div>
-            <h3 className="font-outfit text-2xl font-semibold mb-2">
-              KOMO-YUKI
-            </h3>
+            <img
+              src="/images/White-logo.png"
+              alt="KOMO-YUKI"
+              className="h-12 w-auto mb-3"
+            />
             <p className="text-white/80">
               Japanese-Inspired Asian Gifts & Toys Retail
             </p>

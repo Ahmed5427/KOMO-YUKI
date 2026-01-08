@@ -5,9 +5,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="font-outfit text-2xl md:text-3xl font-bold text-charcoal">
-              KOMO-YUKI
-            </h1>
+            <img
+              src="/images/Black-logo.png"
+              alt="KOMO-YUKI"
+              className="h-12 md:h-14 w-auto"
+            />
           </div>
 
           {/* Navigation */}
