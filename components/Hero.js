@@ -1,16 +1,27 @@
 export default function Hero() {
   return (
     <section className="relative h-[90vh] md:h-[75vh] min-h-[500px] md:min-h-[600px] max-h-[750px] flex items-end pb-12 md:pb-16 pt-20">
-      {/* Background Image */}
+      {/* Background Image - Mobile */}
       <div
-        className="absolute inset-0 bg-cover md:bg-contain bg-center md:bg-no-repeat bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
+        style={{
+          backgroundImage: 'url(/images/mobile.png)',
+        }}
+      >
+        {/* Overlay - darker on mobile for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70"></div>
+      </div>
+
+      {/* Background Image - Desktop */}
+      <div
+        className="hidden md:block absolute inset-0 bg-contain bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/hero-storefront.png)',
           backgroundPosition: 'center 95%'
         }}
       >
-        {/* Overlay - darker on mobile for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70 md:from-black/20 md:via-transparent md:to-black/60"></div>
+        {/* Overlay - lighter on desktop */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60"></div>
       </div>
 
       {/* Content */}
