@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="relative h-[90vh] md:h-[75vh] min-h-[500px] md:min-h-[600px] max-h-[750px] flex items-end pb-12 md:pb-16 pt-20">
       {/* Background Image - Mobile */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
+        className="absolute inset-x-0 top-20 bottom-0 bg-cover bg-center bg-no-repeat md:hidden"
         style={{
           backgroundImage: 'url(/images/mobile.png)',
         }}
@@ -14,7 +14,7 @@ export default function Hero() {
 
       {/* Background Image - Desktop */}
       <div
-        className="hidden md:block absolute inset-0 bg-cover bg-no-repeat"
+        className="hidden md:block absolute inset-x-0 top-20 bottom-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/hero-storefront.png)',
           backgroundPosition: 'center top'
