@@ -28,10 +28,10 @@ export default function Footer() {
               Head Office Enquiries
             </h4>
             <a
-              href="mailto:enquiries@komo-yuki.com"
+              href="mailto:duncan@komoyuki.com"
               className="text-blush-pink hover:underline"
             >
-              enquiries@komo-yuki.com
+              duncan@komoyuki.com
             </a>
           </div>
         </div>

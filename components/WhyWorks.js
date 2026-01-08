@@ -45,12 +45,12 @@ export default function WhyWorks() {
           </p>
         </ScrollAnimation>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon
             return (
-              <ScrollAnimation key={index} delay={index * 100}>
-                <div className="p-8 bg-white/95 rounded-lg backdrop-blur-sm">
+              <ScrollAnimation key={index} delay={index * 100} className="h-full">
+                <div className="p-8 bg-white/95 rounded-lg backdrop-blur-sm h-full">
                   <Icon className="w-10 h-10 mb-4 text-charcoal" />
                   <h3 className="font-outfit text-xl font-semibold text-charcoal mb-3">
                     {benefit.title}

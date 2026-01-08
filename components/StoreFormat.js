@@ -33,7 +33,7 @@ export default function StoreFormat() {
                 <h4 className="font-semibold text-lg text-charcoal mb-2">
                   Compact to Mid-Size Units
                 </h4>
-                <p className="text-peach font-semibold text-lg mb-4">
+                <p className="text-gray-700 font-bold text-lg mb-4">
                   700 – 1,500 sq ft retail space
                 </p>
               </div>
@@ -81,7 +81,7 @@ export default function StoreFormat() {
                 <h4 className="font-semibold text-lg text-charcoal mb-2">
                   Mid-Size to Large Units
                 </h4>
-                <p className="text-peach font-semibold text-lg mb-4">
+                <p className="text-gray-700 font-bold text-lg mb-4">
                   1,800 – 3,000+ sq ft total space
                 </p>
               </div>

@@ -66,7 +66,7 @@ export default function WhatIsKomoYuki() {
                 <h4 className="font-outfit text-2xl font-bold text-charcoal mb-3">
                   KOMO-YUKI STORE
                 </h4>
-                <p className="text-peach font-semibold mb-4">
+                <p className="text-gray-700 font-bold mb-4">
                   Modern Asian Collectibles & Lifestyle
                 </p>
                 <div className="space-y-3 text-gray-700">
@@ -80,7 +80,7 @@ export default function WhatIsKomoYuki() {
                 <h4 className="font-outfit text-2xl font-bold text-charcoal mb-3">
                   KOMO-YUKI TEA & SANDO HOUSE
                 </h4>
-                <p className="text-peach font-semibold mb-4">
+                <p className="text-gray-700 font-bold mb-4">
                   Japanese-Inspired Café Experience
                 </p>
                 <div className="space-y-3 text-gray-700">

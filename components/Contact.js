@@ -23,8 +23,8 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Landlord Form */}
-          <ScrollAnimation>
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+          <ScrollAnimation className="h-full">
+            <div className="bg-white p-8 rounded-lg shadow-sm h-full flex flex-col">
               <h3 className="font-outfit text-2xl font-semibold text-charcoal mb-3">
                 Landlord & Property Enquiries
               </h3>
@@ -80,8 +80,8 @@ export default function Contact() {
           </ScrollAnimation>
 
           {/* Supplier Form */}
-          <ScrollAnimation delay={200}>
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+          <ScrollAnimation delay={200} className="h-full">
+            <div className="bg-white p-8 rounded-lg shadow-sm h-full flex flex-col">
               <h3 className="font-outfit text-2xl font-semibold text-charcoal mb-3">
                 Supplier Enquiries
               </h3>
@@ -158,20 +158,6 @@ export default function Contact() {
             </div>
           </ScrollAnimation>
         </div>
-
-        <ScrollAnimation delay={400}>
-          <div className="text-center pt-8 border-t border-gray-300">
-            <p className="text-lg text-gray-600">
-              General enquiries:{' '}
-              <a
-                href="mailto:enquiries@komo-yuki.com"
-                className="text-charcoal font-semibold underline hover:text-gray-700"
-              >
-                enquiries@komo-yuki.com
-              </a>
-            </p>
-          </div>
-        </ScrollAnimation>
       </div>
     </section>
   )

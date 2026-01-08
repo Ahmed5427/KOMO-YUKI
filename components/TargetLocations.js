@@ -39,8 +39,8 @@ export default function TargetLocations() {
           {locations.map((location, index) => {
             const Icon = location.icon
             return (
-              <ScrollAnimation key={index} delay={index * 100}>
-                <div className="p-10 bg-cream rounded-lg text-center hover:shadow-lg transition-shadow duration-300">
+              <ScrollAnimation key={index} delay={index * 100} className="h-full">
+                <div className="p-10 bg-cream rounded-lg text-center hover:shadow-lg transition-shadow duration-300 h-full flex flex-col items-center justify-start">
                   <Icon className="w-14 h-14 mx-auto mb-6 text-charcoal" />
                   <h3 className="font-outfit text-xl font-semibold text-charcoal mb-3">
                     {location.title}
