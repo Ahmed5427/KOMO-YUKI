@@ -13,20 +13,33 @@ export default function Header() {
           </div>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="text-gray-700 hover:text-blush-pink transition-colors font-medium">
+          <nav className="hidden md:flex items-center space-x-8" style={{ fontFamily: '"Noto Sans JP", sans-serif' }}>
+
+            <a href="#about" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
+
               About
+
             </a>
-            <a href="#format" className="text-gray-700 hover:text-blush-pink transition-colors font-medium">
+
+            <a href="#format" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
+
               Store Format
+
             </a>
-            <a href="#benefits" className="text-gray-700 hover:text-blush-pink transition-colors font-medium">
+
+            <a href="#benefits" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
+
               Benefits
+
             </a>
-            <a href="#locations" className="text-gray-700 hover:text-blush-pink transition-colors font-medium">
+
+            <a href="#locations" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
+
               Locations
+
             </a>
-            <a href="#contact" className="px-6 py-2.5 bg-charcoal text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold">
+
+            <a href="#contact" className="px-6 py-2.5 bg-charcoal text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold tracking-wide">
               Contact Us
             </a>
           </nav>
