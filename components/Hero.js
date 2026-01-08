@@ -1,3 +1,5 @@
+'use client'
+
 export default function Hero() {
   return (
     <section className="relative h-[90vh] md:h-[75vh] min-h-[500px] md:min-h-[600px] max-h-[750px] flex items-end pb-12 md:pb-16 pt-[100px] md:pt-[120px]">
