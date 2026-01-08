@@ -3,8 +3,11 @@ export default function Hero() {
     <section className="relative h-[75vh] min-h-[600px] max-h-[750px] flex items-end pb-16 pt-20">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/hero-storefront.png)' }}
+        className="absolute inset-0 bg-contain bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/images/hero-storefront.png)',
+          backgroundPosition: 'center 15%'
+        }}
       >
         {/* Overlay - lighter to show the storefront better */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60"></div>
