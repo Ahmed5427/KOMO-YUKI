@@ -11,7 +11,7 @@ export default function Footer() {
             <img
               src="/images/White-logo.png"
               alt="KOMO-YUKI"
-              className="h-10 md:h-12 w-auto mb-4"
+              className="h-8 md:h-10 w-auto mb-4"
             />
             <p className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
               Japanese-Inspired Asian Gifts, Figures & Collectibles
