@@ -14,7 +14,7 @@ export default function Hero() {
 
       {/* Background Image - Desktop */}
       <div
-        className="hidden md:block absolute inset-0 bg-contain bg-no-repeat"
+        className="hidden md:block absolute inset-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/hero-storefront.png)',
           backgroundPosition: 'center 99%'
