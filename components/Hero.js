@@ -6,7 +6,7 @@ export default function Hero() {
         className="absolute inset-0 bg-contain bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/hero-storefront.png)',
-          backgroundPosition: 'center 15%'
+          backgroundPosition: 'center 65%'
         }}
       >
         {/* Overlay - lighter to show the storefront better */}
