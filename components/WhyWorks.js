@@ -5,27 +5,27 @@ const benefits = [
   {
     icon: Eye,
     title: 'Strong Visual Frontage',
-    description: 'Enhances street appeal and attracts attention',
+    description: 'Distinctive storefront design intended to enhance street presence and attract attention from passing footfall.',
   },
   {
     icon: Users,
     title: 'Broad Demographic Appeal',
-    description: 'Children, teens, families, and tourists',
+    description: 'Designed to appeal across age groups, including children, teens, families, and tourists, supporting consistent daily traffic.',
   },
   {
     icon: Clock,
     title: 'High Dwell Time',
-    description: 'Impulse-driven purchasing behaviour',
+    description: 'A discovery-led retail environment, with select locations incorporating café elements, designed to encourage longer visits and repeat footfall.',
   },
   {
     icon: Calendar,
     title: 'Year-Round Performance',
-    description: 'Reliable, everyday retail rather than seasonal dependency',
+    description: 'Product mix and experience are planned to support reliable, all-season trading rather than reliance on peak periods alone.',
   },
   {
     icon: TrendingUp,
-    title: 'Footfall Contribution',
-    description: 'Consistent traffic that benefits surrounding units',
+    title: 'Positive Footfall Contribution',
+    description: 'Intended to generate consistent pedestrian traffic that benefits neighbouring units and the wider retail environment.',
   },
 ]
 
@@ -37,8 +37,11 @@ export default function WhyWorks() {
           <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-6">
             Why Komo-Yuki Works for Landlords
           </h2>
-          <p className="text-xl text-charcoal text-center max-w-4xl mx-auto mb-12 font-medium">
-            Komo-Yuki is designed to be a footfall-positive retail tenant, not a niche destination.
+          <p className="text-xl text-charcoal text-center max-w-4xl mx-auto mb-4 font-medium">
+            KOMO-YUKI is being developed as a footfall-positive retail tenant, designed to attract attention, increase dwell time, and complement surrounding occupiers.
+          </p>
+          <p className="text-lg text-charcoal text-center max-w-4xl mx-auto mb-12">
+            The concept is structured to perform as everyday retail, not as a niche or seasonal use.
           </p>
         </ScrollAnimation>
 
@@ -60,6 +63,14 @@ export default function WhyWorks() {
             )
           })}
         </div>
+
+        <ScrollAnimation delay={600}>
+          <div className="mt-12 text-center">
+            <p className="text-sm text-charcoal font-medium max-w-4xl mx-auto italic bg-white/50 backdrop-blur-sm p-4 rounded-lg">
+              Store format and concept mix are selected based on location, scale, and surrounding use, ensuring alignment with landlord and placemaking objectives.
+            </p>
+          </div>
+        </ScrollAnimation>
       </div>
     </section>
   )

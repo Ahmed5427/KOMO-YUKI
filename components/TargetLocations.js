@@ -5,17 +5,17 @@ const locations = [
   {
     icon: MapPin,
     title: 'Pedestrian High Streets',
-    description: 'Town centres with significant footfall',
+    description: 'Town-centre locations with consistent pedestrian footfall and strong local activity.',
   },
   {
     icon: Eye,
     title: 'Visibility & Footfall',
-    description: 'Primary secondary locations with strong sightlines',
+    description: 'Primary or strong secondary positions with clear sightlines and natural passing traffic.',
   },
   {
     icon: Building2,
     title: 'Ground-Floor Retail',
-    description: 'Direct street or mall-level frontage',
+    description: 'Street-level or mall-level units with direct frontage and clear customer access.',
   },
 ]
 
@@ -27,12 +27,15 @@ export default function TargetLocations() {
           <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-6">
             Target Locations
           </h2>
-          <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
-            We are actively reviewing town-centre retail opportunities and welcome introductions from landlords and agents.
+          <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-4">
+            KOMO-YUKI is actively reviewing town-centre retail opportunities and welcomes introductions from landlords and agents.
+          </p>
+          <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+            Locations are assessed based on footfall quality, visibility, and suitability for either of the KOMO-YUKI store formats.
           </p>
         </ScrollAnimation>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           {locations.map((location, index) => {
             const Icon = location.icon
             return (
@@ -52,6 +55,14 @@ export default function TargetLocations() {
         </div>
 
         <ScrollAnimation delay={300}>
+          <div className="text-center mb-12">
+            <p className="text-sm text-gray-600 max-w-3xl mx-auto italic">
+              Unit size and layout will determine suitability for either the KOMO-YUKI Store or the KOMO-YUKI Tea & Sando House format.
+            </p>
+          </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation delay={400}>
           <div className="text-center">
             <a
               href="#contact"
