@@ -17,7 +17,7 @@ export default function Hero() {
         className="hidden md:block absolute inset-0 bg-contain bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/hero-storefront.png)',
-          backgroundPosition: 'center 95%'
+          backgroundPosition: 'center 99%'
         }}
       >
         {/* Overlay - lighter on desktop */}
