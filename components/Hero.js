@@ -4,7 +4,7 @@ export default function Hero() {
       {/* Background Image */}
       <div
          className="absolute inset-0 bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/hero-storefront.jpg)' }}
+        style={{ backgroundImage: 'url(/images/hero-storefront.png)' }}
       >
         {/* Overlay - lighter to show the storefront better */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60"></div>
