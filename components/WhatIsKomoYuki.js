@@ -12,7 +12,7 @@ export default function WhatIsKomoYuki() {
         </ScrollAnimation>
 
         <ScrollAnimation delay={100}>
-          <div className="max-w-4xl mx-auto space-y-4 text-center mb-16">
+          <div className="max-w-4xl mx-auto space-y-4 mb-16">
             <p className="text-lg text-gray-700 leading-relaxed">
               KOMO-YUKI is a new retail and experience concept inspired by modern Japanese culture and contemporary Asian design.
             </p>
@@ -31,7 +31,7 @@ export default function WhatIsKomoYuki() {
             <h3 className="font-outfit text-3xl font-bold text-charcoal mb-6 text-center">
               A Platform for Asian Indie Brands
             </h3>
-            <div className="space-y-4 text-center">
+            <div className="space-y-4">
               <p className="text-lg text-gray-700 leading-relaxed">
                 KOMO-YUKI is being built as a destination for independent, design-led brands from Asia, with a focus on Japan and Korea.
               </p>
@@ -51,7 +51,7 @@ export default function WhatIsKomoYuki() {
             <h3 className="font-outfit text-3xl font-bold text-charcoal mb-6 text-center">
               Two Concepts. One Brand.
             </h3>
-            <div className="space-y-4 text-center mb-8">
+            <div className="space-y-4 mb-8">
               <p className="text-lg text-gray-700 leading-relaxed">
                 KOMO-YUKI operates as a dual-concept brand, allowing flexibility by location while preserving consistency in quality, design, and experience.
               </p>
@@ -99,7 +99,7 @@ export default function WhatIsKomoYuki() {
             <h3 className="font-outfit text-3xl font-bold text-charcoal mb-6 text-center">
               Designed for Modern Retail
             </h3>
-            <div className="space-y-4 text-center">
+            <div className="space-y-4">
               <p className="text-lg text-gray-700 leading-relaxed">
                 KOMO-YUKI is designed with contemporary retail environments in mind.
               </p>
