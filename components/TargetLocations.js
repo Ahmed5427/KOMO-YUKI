@@ -27,10 +27,10 @@ export default function TargetLocations() {
           <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-6">
             Target Locations
           </h2>
-          <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-4">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-4">
             KOMO-YUKI is actively reviewing town-centre retail opportunities and welcomes introductions from landlords and agents.
           </p>
-          <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+          <p className="text-gray-600 max-w-3xl mx-auto mb-12">
             Locations are assessed based on footfall quality, visibility, and suitability for either of the KOMO-YUKI store formats.
           </p>
         </ScrollAnimation>

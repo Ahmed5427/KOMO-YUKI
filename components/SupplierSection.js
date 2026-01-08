@@ -19,7 +19,7 @@ export default function SupplierSection() {
         </ScrollAnimation>
 
         <ScrollAnimation delay={100}>
-          <div className="max-w-4xl mx-auto text-center mb-8">
+          <div className="max-w-4xl mx-auto mb-8">
             <p className="text-lg text-gray-700 mb-4">
               KOMO-YUKI is building long-term relationships with independent and established suppliers across collectibles, toys, lifestyle, and design-led products.
             </p>

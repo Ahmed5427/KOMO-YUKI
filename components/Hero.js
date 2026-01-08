@@ -1,9 +1,9 @@
 export default function Hero() {
   return (
-    <section className="relative h-[90vh] md:h-[75vh] min-h-[500px] md:min-h-[600px] max-h-[750px] flex items-end pb-12 md:pb-16 pt-[88px] md:pt-[104px]">
+    <section className="relative h-[90vh] md:h-[75vh] min-h-[500px] md:min-h-[600px] max-h-[750px] flex items-end pb-12 md:pb-16 pt-[120px] md:pt-[140px]">
       {/* Background Image - Mobile */}
       <div
-        className="absolute inset-x-0 top-[88px] md:top-[104px] bottom-0 bg-cover bg-center bg-no-repeat md:hidden"
+        className="absolute inset-x-0 top-[120px] md:top-[140px] bottom-0 bg-cover bg-center bg-no-repeat md:hidden"
         style={{
           backgroundImage: 'url(/images/mobile.png)',
         }}
@@ -14,7 +14,7 @@ export default function Hero() {
 
       {/* Background Image - Desktop */}
       <div
-        className="hidden md:block absolute inset-x-0 top-[88px] md:top-[104px] bottom-0 bg-cover bg-no-repeat"
+        className="hidden md:block absolute inset-x-0 top-[120px] md:top-[140px] bottom-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: 'url(/images/hero-storefront.png)',
           backgroundPosition: 'center top'
@@ -27,11 +27,6 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 w-full container mx-auto px-4 md:px-6 max-w-6xl">
         <div className="max-w-3xl">
-          <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-blush-pink/95 backdrop-blur-sm rounded-full mb-4 md:mb-6">
-            <p className="text-xs md:text-sm font-semibold text-charcoal uppercase tracking-wide">
-              Professional B2B Retail Concept
-            </p>
-          </div>
           <h1 className="font-outfit text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
             A Modern Asian Gifts & Toys Store
           </h1>

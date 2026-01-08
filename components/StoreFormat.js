@@ -12,7 +12,7 @@ export default function StoreFormat() {
         </ScrollAnimation>
 
         <ScrollAnimation delay={100}>
-          <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto mb-16">
+          <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-16">
             KOMO-YUKI is designed to operate across two distinct store formats, allowing flexibility by location while maintaining a consistent visual and operational standard.
           </p>
         </ScrollAnimation>

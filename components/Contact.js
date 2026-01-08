@@ -16,7 +16,7 @@ export default function Contact() {
           <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-6">
             Contact
           </h2>
-          <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
             For property opportunities, supplier enquiries, or general introductions, please select the relevant form below.
           </p>
         </ScrollAnimation>

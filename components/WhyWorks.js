@@ -37,10 +37,10 @@ export default function WhyWorks() {
           <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-6">
             Why KOMO-YUKI Works for Landlords
           </h2>
-          <p className="text-xl text-charcoal text-center max-w-4xl mx-auto mb-4 font-medium">
+          <p className="text-xl text-charcoal max-w-4xl mx-auto mb-4 font-medium">
             KOMO-YUKI is being developed as a footfall-positive retail tenant, designed to attract attention, increase dwell time, and complement surrounding occupiers.
           </p>
-          <p className="text-lg text-charcoal text-center max-w-4xl mx-auto mb-12">
+          <p className="text-lg text-charcoal max-w-4xl mx-auto mb-12">
             The concept is structured to perform as everyday retail, not as a niche or seasonal use.
           </p>
         </ScrollAnimation>

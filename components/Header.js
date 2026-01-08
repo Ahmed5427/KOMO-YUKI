@@ -2,14 +2,17 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="container mx-auto px-6 max-w-7xl">
-        <div className="flex items-center justify-between h-[88px] md:h-[104px]">
+        <div className="flex items-center justify-between h-[120px] md:h-[140px]">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex flex-col items-start">
             <img
               src="/images/Black-logo.png"
               alt="KOMO-YUKI"
-              className="h-20 md:h-24 w-auto"
+              className="h-24 md:h-32 w-auto mb-1"
             />
+            <p className="text-xs md:text-sm font-light tracking-widest text-gray-600 uppercase" style={{ fontFamily: '"Noto Serif JP", serif', letterSpacing: '0.2em' }}>
+              Trending Gifts & Toys
+            </p>
           </div>
 
           {/* Navigation */}
