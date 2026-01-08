@@ -12,6 +12,7 @@ export default function Footer() {
               src="/images/White-logo.png"
               alt="KOMO-YUKI"
               className="h-28 md:h-36 w-auto mb-4"
+              style={{ transform: 'rotate(-90deg)', transformOrigin: 'left center' }}
             />
             <p className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
               Japanese-Inspired Asian Gifts, Figures & Collectibles
