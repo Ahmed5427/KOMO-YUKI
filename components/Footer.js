@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8 pb-8 border-b border-white/20">
           <div>
             <h3 className="font-outfit text-2xl font-semibold mb-2">
-              Komo-Yuki
+              KOMO-YUKI
             </h3>
             <p className="text-white/80">
               Japanese-Inspired Asian Gifts & Toys Retail
@@ -39,7 +39,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/70 text-sm">
-            &copy; 2025 Komo-Yuki. All rights reserved.
+            &copy; 2025 KOMO-YUKI. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-sm text-white/70">
             <a href="#" className="hover:text-white transition-colors">

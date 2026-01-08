@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Komo-Yuki | Modern Asian Gifts & Toys Retail Concept',
+  title: 'KOMO-YUKI | Modern Asian Gifts & Toys Retail Concept',
   description: 'Japanese-inspired retail designed for high-footfall town centres. Professional B2B presentation for landlords and property developers.',
 }
 

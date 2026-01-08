@@ -7,7 +7,7 @@ export default function WhatIsKomoYuki() {
         {/* Main Section */}
         <ScrollAnimation>
           <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal text-center mb-4">
-            What is Komo-Yuki
+            What is KOMO-YUKI
           </h2>
         </ScrollAnimation>
 
