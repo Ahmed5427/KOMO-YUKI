@@ -17,13 +17,16 @@ export default function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8" style={{ fontFamily: '"Noto Sans JP", sans-serif' }}>
             <a href="#about" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
-              About
+              About KOMO-YUKI
             </a>
-            <a href="#format" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
-              Store Format
+            <a href="#landlords" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
+              For Landlords
             </a>
-            <a href="#benefits" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
-              Benefits
+            <a href="#brands" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
+              For Brands
+            </a>
+            <a href="#formats" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
+              Store Formats
             </a>
             <a href="#locations" className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide">
               Locations

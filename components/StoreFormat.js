@@ -1,19 +1,22 @@
 import ScrollAnimation from './ScrollAnimation'
-import { Store, Coffee, Layers, Sparkles, RefreshCw, Zap, Plug } from 'lucide-react'
+import { Store, Coffee, Layers, Sparkles, RefreshCw, Zap } from 'lucide-react'
 
 export default function StoreFormat() {
   return (
-    <section className="py-20 bg-white">
+    <section id="formats" className="py-20 bg-white">
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
           <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
-            Store Format
+            Store Formats
           </h2>
         </ScrollAnimation>
 
         <ScrollAnimation delay={100}>
+          <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-4">
+            KOMO-YUKI operates across flexible store formats designed to adapt by location while maintaining a consistent visual and operational standard.
+          </p>
           <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-16">
-            KOMO-YUKI is designed to operate across two distinct store formats, allowing flexibility by location while maintaining a consistent visual and operational standard.
+            Each format is selected based on footfall, the surrounding environment, and long-term opportunity.
           </p>
         </ScrollAnimation>
 
@@ -25,24 +28,34 @@ export default function StoreFormat() {
               <div className="flex items-center gap-3 mb-4">
                 <Store className="w-8 h-8 text-blush-pink" />
                 <h3 className="font-outfit text-2xl font-bold text-charcoal">
-                  KOMO-YUKI STORE FORMAT
+                  KOMO-YUKI STORE
                 </h3>
               </div>
 
-              <div className="mb-6">
+              <p className="text-gray-700 font-bold text-lg mb-4">
+                Modern Asian collectibles & lifestyle
+              </p>
+
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                A retail-focused format centred on collectibles, gifts, and lifestyle products sourced from Japan, Korea, and across Asia.
+              </p>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                This format prioritises visual impact, fast product rotation, and broad demographic appeal.
+              </p>
+
+              <div className="mb-6 mt-6">
                 <h4 className="font-semibold text-lg text-charcoal mb-2">
-                  Compact to Mid-Size Units
+                  Typical size
                 </h4>
-                <p className="text-gray-700 font-bold text-lg mb-4">
-                  700 – 1,500 sq ft retail space
+                <p className="text-gray-700 font-bold text-lg">
+                  700–1,500 sq ft
                 </p>
               </div>
 
-              <p className="text-gray-700 mb-4 leading-relaxed">
-                Designed for high-street and town-centre locations, the KOMO-YUKI Store format focuses on fast-moving retail, strong merchandising, and high visual impact.
-              </p>
-
-              <ul className="space-y-2 text-gray-700">
+              <h4 className="font-semibold text-lg text-charcoal mb-3">
+                Key features
+              </h4>
+              <ul className="space-y-2 text-gray-700 mb-6">
                 <li className="flex items-start gap-2">
                   <span className="text-blush-pink mt-1">•</span>
                   <span>Modular shelving and displays</span>
@@ -53,17 +66,21 @@ export default function StoreFormat() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blush-pink mt-1">•</span>
-                  <span>Fast product rotation</span>
+                  <span>Fast-moving product categories</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blush-pink mt-1">•</span>
-                  <span>Efficient fit-out</span>
+                  <span>Efficient, low-impact fit-out</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blush-pink mt-1">•</span>
                   <span>Standard retail utilities</span>
                 </li>
               </ul>
+
+              <p className="text-charcoal font-semibold">
+                Designed for high-street and town-centre locations.
+              </p>
             </div>
           </ScrollAnimation>
 
@@ -73,31 +90,41 @@ export default function StoreFormat() {
               <div className="flex items-center gap-3 mb-4">
                 <Coffee className="w-8 h-8 text-peach" />
                 <h3 className="font-outfit text-2xl font-bold text-charcoal">
-                  KOMO-YUKI TEA & SANDO HOUSE FORMAT
+                  KOMO-YUKI TEA & SANDO HOUSE
                 </h3>
               </div>
 
-              <div className="mb-6">
+              <p className="text-gray-700 font-bold text-lg mb-4">
+                Japanese-inspired café experience
+              </p>
+
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                A café-led format planned for select locations, designed as an experience-first extension of the KOMO-YUKI brand.
+              </p>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Inspired by Japanese tea culture, milk-bread sandos, and modern Japanese flavours, this format is intended to support longer dwell times and destination-led visits.
+              </p>
+
+              <div className="mb-6 mt-6">
                 <h4 className="font-semibold text-lg text-charcoal mb-2">
-                  Mid-Size to Large Units
+                  Typical size
                 </h4>
-                <p className="text-gray-700 font-bold text-lg mb-4">
-                  1,800 – 3,000+ sq ft total space
+                <p className="text-gray-700 font-bold text-lg">
+                  1,800–3,000+ sq ft
                 </p>
               </div>
 
-              <p className="text-gray-700 mb-4 leading-relaxed">
-                The Tea & Sando House format is planned for select locations and includes both retail and café space. This format is designed to support longer dwell times and destination-led visits.
-              </p>
-
-              <ul className="space-y-2 text-gray-700">
+              <h4 className="font-semibold text-lg text-charcoal mb-3">
+                Key features
+              </h4>
+              <ul className="space-y-2 text-gray-700 mb-6">
                 <li className="flex items-start gap-2">
                   <span className="text-peach mt-1">•</span>
-                  <span>Dedicated café seating area</span>
+                  <span>Combined retail and café zoning</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-peach mt-1">•</span>
-                  <span>Retail and café zoning</span>
+                  <span>Dedicated seating areas</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-peach mt-1">•</span>
@@ -112,6 +139,10 @@ export default function StoreFormat() {
                   <span>Suitable for lifestyle destinations and mixed-use developments</span>
                 </li>
               </ul>
+
+              <p className="text-charcoal font-semibold">
+                Available only in locations where the format complements the surrounding environment.
+              </p>
             </div>
           </ScrollAnimation>
         </div>
@@ -120,10 +151,10 @@ export default function StoreFormat() {
         <ScrollAnimation delay={400}>
           <div className="bg-gray-50 p-8 rounded-lg">
             <h3 className="font-outfit text-2xl font-bold text-charcoal mb-6">
-              Designed for Flexible Rollout
+              Designed for flexible rollout
             </h3>
             <p className="text-gray-700 mb-6">
-              Both formats are designed to be:
+              Both KOMO-YUKI formats are designed to be:
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               <div className="text-center">
@@ -144,7 +175,7 @@ export default function StoreFormat() {
               </div>
             </div>
             <p className="text-gray-600 mt-6 italic">
-              Store size and format are selected based on location, opportunity, and the surrounding environment.
+              Store size and format are selected based on location quality, opportunity, and the surrounding environment.
             </p>
           </div>
         </ScrollAnimation>
