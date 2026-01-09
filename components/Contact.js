@@ -67,7 +67,8 @@ export default function Contact() {
     }
 
     try {
-      const response = await fetch('https://afxv17.app.n8n.cloud/webhook/b81d43aa-baca-4047-8608-d1241068c5b2', {
+      const webhookUrl = process.env.NEXT_PUBLIC_WEBHOOK_URL || 'https://afxv17.app.n8n.cloud/webhook/b81d43aa-baca-4047-8608-d1241068c5b2'
+      const response = await fetch(webhookUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
