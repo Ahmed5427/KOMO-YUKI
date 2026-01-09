@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Landlord Enquiry - KOMO-YUKI</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f5f5f5;">
+
+    <!-- Email Container -->
+    <table role="presentation" style="width: 100%; border-collapse: collapse; background-color: #f5f5f5;">
+        <tr>
+            <td style="padding: 40px 20px;">
+
+                <!-- Main Content Card -->
+                <table role="presentation" style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+                    <!-- Header with Brand Color -->
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #F6BCC8 0%, #F4B6C2 100%); padding: 40px 30px; text-align: center;">
+                            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold; letter-spacing: 2px;">
+                                KOMO-YUKI
+                            </h1>
+                            <p style="margin: 10px 0 0 0; color: #ffffff; font-size: 14px; opacity: 0.95;">
+                                Trending Gifts & Toys
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Enquiry Type Badge -->
+                    <tr>
+                        <td style="padding: 30px 30px 20px 30px;">
+                            <table role="presentation" style="width: 100%;">
+                                <tr>
+                                    <td>
+                                        <span style="display: inline-block; background-color: #F6BCC8; color: #2D3748; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; letter-spacing: 0.5px;">
+                                            🏢 LANDLORD & PROPERTY ENQUIRY
+                                        </span>
+                                    </td>
+                                    <td style="text-align: right;">
+                                        <span style="color: #718096; font-size: 14px;">
+                                            {{date}}
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Enquiry Details -->
+                    <tr>
+                        <td style="padding: 0 30px 30px 30px;">
+
+                            <!-- Name -->
+                            <table role="presentation" style="width: 100%; margin-bottom: 20px;">
+                                <tr>
+                                    <td style="padding: 20px; background-color: #F7FAFC; border-left: 4px solid #F6BCC8; border-radius: 6px;">
+                                        <p style="margin: 0 0 8px 0; color: #718096; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            Contact Name
+                                        </p>
+                                        <p style="margin: 0; color: #2D3748; font-size: 18px; font-weight: 600;">
+                                            {{name}}
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Email -->
+                            <table role="presentation" style="width: 100%; margin-bottom: 20px;">
+                                <tr>
+                                    <td style="padding: 20px; background-color: #F7FAFC; border-left: 4px solid #F6BCC8; border-radius: 6px;">
+                                        <p style="margin: 0 0 8px 0; color: #718096; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            Email Address
+                                        </p>
+                                        <p style="margin: 0; color: #2D3748; font-size: 16px;">
+                                            <a href="mailto:{{email}}" style="color: #F6BCC8; text-decoration: none; font-weight: 500;">
+                                                {{email}}
+                                            </a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Property Details Grid -->
+                            <table role="presentation" style="width: 100%; margin-bottom: 20px;">
+                                <tr>
+                                    <!-- Property Location -->
+                                    <td style="width: 48%; padding: 20px; background-color: #F7FAFC; border-left: 4px solid #F6BCC8; border-radius: 6px; vertical-align: top;">
+                                        <p style="margin: 0 0 8px 0; color: #718096; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            Property Location
+                                        </p>
+                                        <p style="margin: 0; color: #2D3748; font-size: 16px; font-weight: 500;">
+                                            {{propertyLocation}}
+                                        </p>
+                                    </td>
+                                    <td style="width: 4%;"></td>
+                                    <!-- Unit Size -->
+                                    <td style="width: 48%; padding: 20px; background-color: #F7FAFC; border-left: 4px solid #F6BCC8; border-radius: 6px; vertical-align: top;">
+                                        <p style="margin: 0 0 8px 0; color: #718096; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            Unit Size
+                                        </p>
+                                        <p style="margin: 0; color: #2D3748; font-size: 16px; font-weight: 500;">
+                                            {{unitSize}}
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Message -->
+                            <table role="presentation" style="width: 100%; margin-bottom: 20px;">
+                                <tr>
+                                    <td style="padding: 20px; background-color: #F7FAFC; border-left: 4px solid #F6BCC8; border-radius: 6px;">
+                                        <p style="margin: 0 0 12px 0; color: #718096; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            Message
+                                        </p>
+                                        <p style="margin: 0; color: #2D3748; font-size: 15px; line-height: 1.6; white-space: pre-wrap;">{{message}}</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Quick Actions -->
+                            <table role="presentation" style="width: 100%; margin-top: 30px;">
+                                <tr>
+                                    <td style="text-align: center; padding: 20px; background-color: #F7FAFC; border-radius: 8px;">
+                                        <p style="margin: 0 0 15px 0; color: #718096; font-size: 14px;">
+                                            Quick Actions
+                                        </p>
+                                        <a href="mailto:{{email}}" style="display: inline-block; background-color: #F6BCC8; color: #2D3748; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: 600; margin: 0 5px;">
+                                            Reply via Email
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 30px; background-color: #2D3748; text-align: center;">
+                            <p style="margin: 0 0 10px 0; color: #ffffff; font-size: 16px; font-weight: 600;">
+                                KOMO-YUKI
+                            </p>
+                            <p style="margin: 0 0 15px 0; color: #A0AEC0; font-size: 13px; line-height: 1.5;">
+                                Modern Asian Gifts & Toys Store<br>
+                                Bringing trending products to retail spaces
+                            </p>
+                            <p style="margin: 0; color: #718096; font-size: 12px;">
+                                © 2026 KOMO-YUKI LTD. All rights reserved.<br>
+                                Registered in England & Wales
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
