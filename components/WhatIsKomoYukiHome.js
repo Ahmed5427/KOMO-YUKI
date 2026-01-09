@@ -7,10 +7,10 @@ export default function WhatIsKomoYukiHome() {
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Main Section */}
         <ScrollAnimation>
-          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-4">
+          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-4 text-center">
             What is KOMO-YUKI
           </h2>
-          <p className="text-xl text-gray-600 mb-6">
+          <p className="text-xl text-gray-600 mb-6 text-center">
             A new retail concept built for discovery and repeat visits.
           </p>
         </ScrollAnimation>

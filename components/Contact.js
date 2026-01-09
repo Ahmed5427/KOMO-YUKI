@@ -47,7 +47,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-cream">
+    <section id="contact" className="py-20" style={{ backgroundColor: '#F6BCC8' }}>
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
           <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
