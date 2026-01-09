@@ -3,7 +3,7 @@ import { Eye, RefreshCw, Layers } from 'lucide-react'
 
 export default function WhatIsKomoYuki() {
   return (
-    <section id="about" className="py-20 bg-cream">
+    <section id="about" className="pt-36 pb-20 bg-cream">
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Main Section */}
         <ScrollAnimation>

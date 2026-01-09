@@ -38,7 +38,7 @@ const suitability = [
 
 export default function WhyWorks() {
   return (
-    <section id="landlords" className="py-20 bg-gradient-to-br from-peach to-blush-pink">
+    <section id="landlords" className="pt-36 pb-20 bg-gradient-to-br from-peach to-blush-pink">
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
           <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">

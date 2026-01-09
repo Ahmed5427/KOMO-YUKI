@@ -3,7 +3,7 @@ import { Store, Coffee, Layers, Sparkles, RefreshCw, Zap } from 'lucide-react'
 
 export default function StoreFormat() {
   return (
-    <section id="formats" className="py-20 bg-white">
+    <section id="formats" className="pt-36 pb-20 bg-white">
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
           <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
