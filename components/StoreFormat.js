@@ -15,9 +15,28 @@ export default function StoreFormat() {
           <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-4">
             KOMO-YUKI operates across flexible store formats designed to adapt by location while maintaining a consistent visual and operational standard.
           </p>
-          <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-16">
+          <p className="text-lg text-gray-700 max-w-4xl mx-auto mb-12">
             Each format is selected based on footfall, the surrounding environment, and long-term opportunity.
           </p>
+        </ScrollAnimation>
+
+        {/* Hero Image - Tea & Sando House */}
+        <ScrollAnimation delay={150}>
+          <div className="relative w-full mb-16 rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="/images/tea-sando-house.png"
+              alt="KOMO-YUKI Tea & Sando House - Japanese-inspired café with outdoor seating"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-6 md:p-8">
+              <p className="text-white text-lg md:text-xl font-outfit font-semibold drop-shadow-lg">
+                KOMO-YUKI Tea & Sando House
+              </p>
+              <p className="text-white/90 text-sm md:text-base drop-shadow-lg">
+                Japanese-inspired café experience
+              </p>
+            </div>
+          </div>
         </ScrollAnimation>
 
         {/* Two Format Cards */}
