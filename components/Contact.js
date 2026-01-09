@@ -229,6 +229,7 @@ export default function Contact() {
                   <div className="mb-6">
                     {currentField.type === 'textarea' ? (
                       <textarea
+                        key={currentField.name}
                         name={currentField.name}
                         placeholder={currentField.placeholder}
                         required={currentField.required}
@@ -239,6 +240,7 @@ export default function Contact() {
                       />
                     ) : (
                       <input
+                        key={currentField.name}
                         type={currentField.type}
                         name={currentField.name}
                         placeholder={currentField.placeholder}
