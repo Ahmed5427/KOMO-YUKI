@@ -5,11 +5,45 @@ import ScrollAnimation from './ScrollAnimation'
 
 export default function Contact() {
   const [enquiryType, setEnquiryType] = useState('landlord')
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState(null) // 'success' or 'error'
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Form submission logic would go here
-    alert('Form submission is not yet implemented. This is a placeholder.')
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    const formData = new FormData(e.target)
+    const data = {
+      enquiryType: enquiryType === 'landlord' ? 'Landlord & Property Enquiries' : 'Supplier Enquiries',
+    }
+
+    // Collect all form fields
+    formData.forEach((value, key) => {
+      data[key] = value
+    })
+
+    try {
+      const response = await fetch('https://afxv17.app.n8n.cloud/webhook/b81d43aa-baca-4047-8608-d1241068c5b2', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        e.target.reset() // Reset form on success
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -80,6 +114,21 @@ export default function Contact() {
                 )}
               </div>
 
+              {/* Success/Error Messages */}
+              {submitStatus === 'success' && (
+                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                  <p className="text-green-800 font-semibold">Thank you for your enquiry!</p>
+                  <p className="text-green-700 text-sm mt-1">We'll get back to you as soon as possible.</p>
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <p className="text-red-800 font-semibold">Oops! Something went wrong.</p>
+                  <p className="text-red-700 text-sm mt-1">Please try again or contact us directly at duncan@komoyuki.com</p>
+                </div>
+              )}
+
               {/* Dynamic Form */}
               <form onSubmit={handleSubmit} className="space-y-4">
                 {enquiryType === 'landlord' ? (
@@ -88,6 +137,7 @@ export default function Contact() {
                     <div>
                       <input
                         type="text"
+                        name="name"
                         placeholder="Name"
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blush-pink focus:border-transparent"
@@ -96,6 +146,7 @@ export default function Contact() {
                     <div>
                       <input
                         type="email"
+                        name="email"
                         placeholder="Email"
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blush-pink focus:border-transparent"
@@ -104,6 +155,7 @@ export default function Contact() {
                     <div>
                       <input
                         type="text"
+                        name="propertyLocation"
                         placeholder="Property Location"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blush-pink focus:border-transparent"
                       />
@@ -111,12 +163,14 @@ export default function Contact() {
                     <div>
                       <input
                         type="text"
+                        name="unitSize"
                         placeholder="Unit Size (if known)"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blush-pink focus:border-transparent"
                       />
                     </div>
                     <div>
                       <textarea
+                        name="message"
                         placeholder="Message"
                         rows="4"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blush-pink focus:border-transparent resize-none"
@@ -129,6 +183,7 @@ export default function Contact() {
                     <div>
                       <input
                         type="text"
+                        name="companyName"
                         placeholder="Company Name"
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blush-pink focus:border-transparent"
@@ -137,6 +192,7 @@ export default function Contact() {
                     <div>
                       <input
                         type="text"
+                        name="contactName"
                         placeholder="Contact Name"
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blush-pink focus:border-transparent"
@@ -145,6 +201,7 @@ export default function Contact() {
                     <div>
                       <input
                         type="email"
+                        name="email"
                         placeholder="Email"
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blush-pink focus:border-transparent"
@@ -153,12 +210,14 @@ export default function Contact() {
                     <div>
                       <input
                         type="text"
+                        name="productCategory"
                         placeholder="Product Category"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blush-pink focus:border-transparent"
                       />
                     </div>
                     <div>
                       <textarea
+                        name="message"
                         placeholder="Message"
                         rows="4"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blush-pink focus:border-transparent resize-none"
@@ -169,9 +228,10 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-charcoal text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300"
+                  disabled={isSubmitting}
+                  className="w-full px-6 py-3 bg-charcoal text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Submit Enquiry
+                  {isSubmitting ? 'Submitting...' : 'Submit Enquiry'}
                 </button>
               </form>
             </div>
