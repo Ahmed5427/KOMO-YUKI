@@ -29,10 +29,15 @@ export default function Footer() {
             <h4 className="font-outfit text-base font-semibold mb-4 uppercase tracking-wide">
               Registered Address
             </h4>
-            <p className="text-white/70 leading-relaxed text-sm">
+            <p className="text-white/70 leading-relaxed text-sm mb-6">
               128 City Road<br />
               London, EC1V 2NX<br />
               United Kingdom
+            </p>
+            <p className="text-white/70 leading-relaxed text-sm">
+              <span className="font-semibold text-white">KOMO-YUKI LTD</span><br />
+              Registered in England & Wales<br />
+              Company Number: PENDING
             </p>
           </div>
 
