@@ -6,7 +6,7 @@ export default function StoreFormat() {
     <section id="formats" className="pt-36 pb-20 bg-white">
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
-          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6 text-center">
             Store Formats
           </h2>
         </ScrollAnimation>

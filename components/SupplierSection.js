@@ -36,7 +36,7 @@ export default function SupplierSection() {
     <section id="brands" className="pt-36 pb-20 bg-gray-50">
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
-          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6 text-center">
             For Brands & Suppliers
           </h2>
         </ScrollAnimation>

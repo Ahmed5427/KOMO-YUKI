@@ -41,13 +41,13 @@ export default function WhyWorks() {
     <section id="landlords" className="pt-36 pb-20 bg-gradient-to-br from-peach to-blush-pink">
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
-          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6 text-center">
             For Landlords & Property Partners
           </h2>
-          <p className="text-xl text-charcoal max-w-4xl mx-auto mb-4 font-medium">
+          <p className="text-xl text-charcoal max-w-4xl mx-auto mb-4 font-medium text-center">
             KOMO-YUKI is designed as a footfall-positive retail tenant suited to high-street, town-centre, and lifestyle destinations.
           </p>
-          <p className="text-lg text-charcoal max-w-4xl mx-auto mb-12">
+          <p className="text-lg text-charcoal max-w-4xl mx-auto mb-12 text-center">
             Our formats prioritise strong visual frontage, efficient use of space, and broad demographic appeal, making KOMO-YUKI easy to place and reliable to operate.
           </p>
           <p className="text-lg text-charcoal max-w-4xl mx-auto mb-12">

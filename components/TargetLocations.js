@@ -31,13 +31,13 @@ export default function TargetLocations() {
     <section id="locations" className="pt-36 pb-20 bg-white">
       <div className="container mx-auto px-6 max-w-7xl">
         <ScrollAnimation>
-          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6">
+          <h2 className="font-outfit text-4xl md:text-5xl font-bold text-charcoal mb-6 text-center">
             Target Locations
           </h2>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-4">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-4 text-center">
             KOMO-YUKI is actively reviewing retail opportunities in town-centre and high-footfall locations.
           </p>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-4">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-4 text-center">
             The brand's initial growth objective is to open up to 10 locations over the next three years, with a long-term plan to continue expanding into additional markets.
           </p>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
