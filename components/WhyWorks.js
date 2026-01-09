@@ -1,5 +1,5 @@
 import ScrollAnimation from './ScrollAnimation'
-import { Eye, Users, Clock, Calendar, TrendingUp, MapPin } from 'lucide-react'
+import { Eye, Users, Clock, Calendar, TrendingUp, MapPin, ArrowUpRight } from 'lucide-react'
 
 const benefits = [
   {
@@ -26,6 +26,11 @@ const benefits = [
     icon: TrendingUp,
     title: 'Low operational risk',
     description: 'Simple retail operation with no specialist infrastructure requirements.',
+  },
+  {
+    icon: ArrowUpRight,
+    title: 'Neighbouring unit uplift',
+    description: 'High-energy storefronts and window displays that boost footfall and positively impact surrounding retailers.',
   },
 ]
 

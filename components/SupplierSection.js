@@ -101,7 +101,7 @@ export default function SupplierSection() {
         <ScrollAnimation delay={700}>
           <div className="text-center">
             <a
-              href="#contact"
+              href="/#contact"
               className="inline-block px-12 py-4 bg-blush-pink text-charcoal font-semibold rounded-lg hover:bg-pink-400 transition-colors duration-300 text-lg"
             >
               Get in Touch →
