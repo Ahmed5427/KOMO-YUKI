@@ -29,7 +29,7 @@ export default function Footer() {
             <h4 className="font-outfit text-base font-semibold mb-4 uppercase tracking-wide">
               Registered Address
             </h4>
-            <p className="text-white/70 leading-relaxed text-sm mb-6">
+            <p className="text-white/70 leading-relaxed text-sm mb-2">
               128 City Road<br />
               London, EC1V 2NX<br />
               United Kingdom

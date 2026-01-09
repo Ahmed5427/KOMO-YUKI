@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation'
 
 export default function Header() {
   const [showFormatsDropdown, setShowFormatsDropdown] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const router = useRouter()
 
   const handleLogoClick = (e) => {
@@ -82,12 +83,80 @@ export default function Header() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden p-2 text-charcoal">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+          <button
+            className="md:hidden p-2 text-charcoal"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-100 py-4" style={{ fontFamily: '"Noto Sans JP", sans-serif' }}>
+            <nav className="flex flex-col space-y-4">
+              <Link
+                href="/about"
+                className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide px-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                About KOMO-YUKI
+              </Link>
+              <Link
+                href="/landlords"
+                className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide px-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                For Landlords
+              </Link>
+              <Link
+                href="/brands"
+                className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide px-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                For Brands
+              </Link>
+              <Link
+                href="/formats"
+                className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide px-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Store Formats
+              </Link>
+              <Link
+                href="/signage"
+                className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide px-2 pl-6"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Store Signage
+              </Link>
+              <Link
+                href="/locations"
+                className="text-gray-700 hover:text-blush-pink transition-colors font-medium tracking-wide px-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Locations
+              </Link>
+              <Link
+                href="/#contact"
+                className="mx-2 px-6 py-2.5 rounded-lg font-semibold tracking-wide transition-colors text-center"
+                style={{ backgroundColor: '#F6BCC8', color: '#2B2B2B' }}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact Us
+              </Link>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   )

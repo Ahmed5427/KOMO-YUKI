@@ -29,10 +29,10 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 w-full container mx-auto px-4 md:px-6 max-w-6xl">
         <div className="max-w-3xl">
-          <h1 className="font-outfit text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight whitespace-nowrap">
+          <h1 className="font-outfit text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight sm:whitespace-nowrap">
             A Modern Asian Gifts & Toys Store
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-6 md:mb-8 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-white mb-6 md:mb-8 leading-relaxed">
             Japanese-inspired retail designed for high-footfall town centres
           </p>
           <div>
