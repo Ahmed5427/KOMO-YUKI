@@ -43,7 +43,7 @@ export default function Header() {
 
             {/* Store Formats with Dropdown */}
             <div
-              className="relative"
+              className="relative py-2"
               onMouseEnter={() => setShowFormatsDropdown(true)}
               onMouseLeave={() => setShowFormatsDropdown(false)}
             >
@@ -54,19 +54,21 @@ export default function Header() {
                 Store Formats
               </Link>
               {showFormatsDropdown && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100">
-                  <Link
-                    href="/formats"
-                    className="block px-4 py-3 text-gray-700 hover:bg-blush-pink hover:text-white transition-colors font-medium"
-                  >
-                    Store Formats
-                  </Link>
-                  <Link
-                    href="/signage"
-                    className="block px-4 py-3 text-gray-700 hover:bg-blush-pink hover:text-white transition-colors font-medium"
-                  >
-                    Store Signage
-                  </Link>
+                <div className="absolute top-full left-0 pt-2 w-48">
+                  <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100">
+                    <Link
+                      href="/formats"
+                      className="block px-4 py-3 text-gray-700 hover:bg-blush-pink hover:text-white transition-colors font-medium"
+                    >
+                      Store Formats
+                    </Link>
+                    <Link
+                      href="/signage"
+                      className="block px-4 py-3 text-gray-700 hover:bg-blush-pink hover:text-white transition-colors font-medium"
+                    >
+                      Store Signage
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
