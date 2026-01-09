@@ -1,4 +1,5 @@
 import './globals.css'
+import ScrollToTop from '@/components/ScrollToTop'
 
 export const metadata = {
   title: 'KOMO-YUKI | Modern Asian Gifts & Toys Retail Concept',
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased">
+        <ScrollToTop />
         {children}
       </body>
     </html>
