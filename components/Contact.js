@@ -67,8 +67,7 @@ export default function Contact() {
     }
 
     try {
-      const webhookUrl = process.env.NEXT_PUBLIC_WEBHOOK_URL || 'https://afxv17.app.n8n.cloud/webhook/b81d43aa-baca-4047-8608-d1241068c5b2'
-      const response = await fetch(webhookUrl, {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -76,7 +75,9 @@ export default function Contact() {
         body: JSON.stringify(finalData),
       })
 
-      if (response.ok) {
+      const result = await response.json()
+
+      if (result.success) {
         setSubmitStatus('success')
         setFormData({})
         setCurrentStep(0)
