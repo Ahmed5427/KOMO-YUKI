@@ -101,15 +101,19 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/60 text-xs uppercase tracking-wide">
-            © 2025 KOMO-YUKI. All rights reserved.
+            © 2026 KOMO-YUKI. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-xs text-white/60 uppercase tracking-wide">
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/privacy" className="hover:text-white transition-colors">
               Privacy Policy
             </a>
             <span>|</span>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/terms" className="hover:text-white transition-colors">
               Terms of Service
+            </a>
+            <span>|</span>
+            <a href="/cookies" className="hover:text-white transition-colors">
+              Cookie Policy
             </a>
           </div>
         </div>
